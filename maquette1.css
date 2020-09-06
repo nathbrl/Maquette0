@@ -1,0 +1,168 @@
+/* Définition des polices personnalisées */
+body,html{
+	background-color: gray ;
+	font-family: 'Raleway', 'sans-serif';
+	margin:0;
+	padding:0;
+}
+/* Eléments principaux de la page */
+#conteneur{
+	display: inline-block;
+}
+h3{
+	font-weight: bolder;
+	font-size: 15px;
+}
+h4{
+	font-size: 12px;
+	font-weight: normal;
+}
+/*nav*/
+nav{
+	position: fixed;
+  	overflow: hidden;
+  	display: flex;
+  	justify-content: space-between;
+  	left: 75%;
+  	float: right;
+  	font-size: 14px;
+}
+nav,li{
+  	list-style-type: none;
+  	display: inline-block;
+	margin-left: 30px;
+}
+a{
+	text-decoration: none;
+	display: inline-block;
+}
+a:hover{
+	background-color: #DEEBFF;
+	transition: 0.2s;
+}
+#normal{
+	border-top: solid 2px #0065FC;
+  	padding-top: 30px;
+  	color: #0065FC;
+}
+#black{
+	color: #000;
+}
+#bold{
+	font-weight: bold;
+	color: #0065FC;
+}
+/*header*/
+
+.logo{
+	position: relative;
+	width: 60px;
+	height: 35px;
+	top: 30%;
+	float: left;
+	margin: 0;
+	padding: 0;
+	padding-bottom: 25px;
+}
+input{
+	outline: none;
+	border: none;
+	color: black;
+}
+::placeholder{
+	color: black;
+}
+::-webkit-input-placeholder{
+	color: black;
+}
+:-ms-input-placeholder{
+	color: black;
+}
+::-moz-placeholder{
+	color: black;
+	opacity: 1;
+}
+#searchbox{
+	position: fixed;
+	display: inline-block;
+	background-color: white;
+	height: 25px;
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+}
+#map{
+	text-align: center;
+	background-color: #F2F2F2;
+	margin: 5px 5px 5px 8px;
+	padding: 0 2px 2px 2px;
+	width: 20px;
+}
+#search{
+	background-color: #0065FC;
+	color: white;
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+	border: solid 2px #0065FC;
+	border-width: 5px;
+	margin-right: -2em;
+}
+#icône{
+	display: inline-block;
+	margin-left: -4.1em;
+	padding-top: 25px;
+	width: 100%;
+	color: #0065FC;
+}
+li{
+	font-size: 14px;
+	color: #000;
+}
+#info{
+	color: #0065FC;
+	display: inline-block;
+	margin: 25px;
+	font-size: 12px;
+	border: solid 1px #F2F2F2;
+	border-radius: 50%;
+}
+img{
+	border-radius: 20px;
+}
+figure{
+	border: solid 4px white;
+	border-radius: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 5px;
+	width: 18%;
+	background-color: #F2F2F2;
+}
+/*footer*/
+footer{
+	display: flex;
+	background-color: #F2F2F2;
+	padding-top: 25px;
+}
+footer, h4{
+	font-size: 15px;
+	font-weight: bold;
+}
+#propos{
+	padding: 50px;
+	font-size: 12px;
+	font-weight: lighter;
+}
+#hébergement{
+	padding: 50px;
+	font-size: 12px;
+	padding-left: 20%;
+	font-weight: lighter;
+	
+}
+#assistance{
+	padding: 50px;
+	font-size: 12px;
+	padding-left: 20%;
+	font-weight: lighter;
+}
