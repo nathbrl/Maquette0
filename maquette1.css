@@ -1,6 +1,6 @@
 /* DÉFINITON DES POLICES PERSONNALISÉES */
 body,html{
-	background-color: gray ;
+	background-color: white;
 	font-family: 'Raleway', 'sans-serif';
 	margin:0;
 	padding:0;
@@ -11,27 +11,20 @@ body,html{
 	margin-right: auto;
 	margin-left: auto;
 	height: auto;
-	width: 100%;
-}
-h3{
-	font-weight: bolder;
-	font-size: 15px;
-}
-h4{
-	font-size: 12px;
-	font-weight: normal;
 }
 /*nav*/
+#logo-nav{
+	display: flex;
+	justify-content: space-between;
+}
+#logo{
+	width: 65px;
+	height: 40px;
+}
 nav{
-	position: fixed;
-  	overflow: hidden;
-  	display: flex;
-  	justify-content: space-between;
-  	left: 75%;
-  	float: right;
   	font-size: 14px;
 }
-nav,li{
+li{
   	list-style-type: none;
   	display: inline-block;
 	margin-left: 30px;
@@ -43,10 +36,11 @@ a{
 a:hover{
 	background-color: #DEEBFF;
 	transition: 0.2s;
+	border-radius: 10px;
 }
 #normal{
 	border-top: solid 2px #0065FC;
-  	padding-top: 30px;
+  	padding-top: 25px;
   	color: #0065FC;
 }
 #black{
@@ -57,26 +51,18 @@ a:hover{
 	color: #0065FC;
 }
 /*HEADER*/
-header{
-	background-color: green;
-	display: 
+h3{
+	font-weight: bold;
 }
-.logo{
-	position: relative;
-	width: 60px;
-	height: 35px;
-	top: 30%;
-	float: left;
-	margin: 0;
-	padding: 0;
-	padding-bottom: 25px;
+h4{
+	font-weight: normal;
 }
 input{
 	outline: none;
 	border: none;
 	color: black;
 }
-::placeholder{
+/*::placeholder{
 	color: black;
 }
 ::-webkit-input-placeholder{
@@ -88,90 +74,125 @@ input{
 ::-moz-placeholder{
 	color: black;
 	opacity: 1;
-}
-#searchbox{
-	position: fixed;
+}*/
+#search-box{
+	position: absolute;
 	display: inline-block;
 	background-color: white;
 	height: 25px;
+	border-radius: 0 15px 15px 0;
 	border-top-left-radius: 15px;
 	border-bottom-left-radius: 15px;
 }
 #map{
-	text-align: center;
 	background-color: #F2F2F2;
 	margin: 5px 5px 5px 8px;
 	padding: 0 2px 2px 2px;
-	width: 20px;
 }
 #search{
-	background-color: #0065FC;
+	/*background-color: #0065FC;*/
 	color: white;
+	margin-right: -2em;
+	text-align: center;
+	border: solid 1px #0065FC;
 	border-top-right-radius: 15px;
 	border-bottom-right-radius: 15px;
-	border: solid 2px #0065FC;
-	border-width: 5px;
-	margin-right: -2em;
+	background-color: #0065FC;
+	padding: 4px 5px 4px 5px;
 }
-#icône{
-	display: inline-block;
-	margin-left: -4.1em;
-	padding-top: 25px;
-	width: 100%;
+#nav-icon{
+	display: flex;
+	flex-direction: row;
+	padding-top: 30px;
+	margin-left: -5em; 
+	text-align: center;
+}
+.li-icon{
+	background-color: #DEEBFF;
+	border-radius: 50%;
+	padding: 6px 5px 6px 5px;
 	color: #0065FC;
 }
-li{
-	font-size: 14px;
+.icon-text{
+	font-size: 12px;
+	border: solid 1px lightgray;
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
 	color: #000;
+	padding: 5px 5px 5px 8px;
+	border-left: hidden;
+	font-weight: bold;
+}
+#filtre{
+	color: black;
+	font-weight: bold;
 }
 #info{
 	color: #0065FC;
-	display: inline-block;
-	margin: 25px;
-	font-size: 12px;
-	border: solid 1px #F2F2F2;
+	font-size: 11px;
+	border: solid 1px lightgray;
 	border-radius: 50%;
+	padding: 4px 6px 4px 6px;
+	font-size: 8px;
+	margin-right: 8px;
 }
 /*SECTION*/
 section{
-	background-color: lightpink;/*#F2F2F2;*/
-	display: inline-flex;
+	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
+	align-content: space-around;
 }
-#two{
-	background-color: purple;
+.star{
+	color: #0065FC;
+}
+.grey-star{
+	color: lightgrey;
+}
+h5{
+	font-weight: bold;
 }
 h6{
 	font-weight: normal;
 }
+.landscape{
+	border-top-left-radius: 20px;
+	border-top-right-radius:20px;
+}
+#one{
+	background-color: red;/*#F2F2F2*/
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+#two{
+	background-color: blue;/*none*/
+}
 img{
-	border-radius: 20px;
-	max-height: 400px; 
-	max-width:250px;
+	width: 330px;
 }
 figure{
 	border: solid 4px white;
 	border-radius: 20px;
-	display: table;
-	flex-wrap: wrap;
-	justify-content: flex-start;
-	padding: 5px;
-	width: 13%;
-	background-color: #F2F2F2;
+	background-color: #FFF;
 }
 /*ASIDE*/
 aside{
-	right: 65%;
 	background-color: aqua;/*#F2F2F2;*/
-	flex-direction: column;
-	justify-content: left;
+}
+#chart{
+	
+}
+.left-radius{
+	border-top-left-radius:20px;
+	border-bottom-left-radius:20px; 
 }
 /*footer*/
 footer{
 	display: flex;
-	background-color: lightgreen; /*#F2F2F2;*/
+	background-color: #F2F2F2;
 	padding-top: 25px;
 }
 footer, h4{
@@ -183,7 +204,7 @@ footer, h4{
 	font-size: 12px;
 	font-weight: lighter;
 }
-#hébergement{
+#hebergement{
 	padding: 50px;
 	font-size: 12px;
 	padding-left: 20%;
