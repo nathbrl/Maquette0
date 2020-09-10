@@ -1,13 +1,14 @@
 /* DÉFINITON DES POLICES PERSONNALISÉES */
 body,html{
-	background-color: lightgrey;
+	/*background-color: #CCCCFF;*/
 	font-family: 'Raleway', 'sans-serif';
 	margin:0;
 	padding:0;
 }
 /* ÉLÉMENTS PRINCIPAUX DE LA PAGE */
 #conteneur{
-	
+	width: 900px;
+	margin: auto;
 }
 /*nav*/
 #logo-nav{
@@ -18,10 +19,8 @@ body,html{
 	width: 65px;
 	height: 40px;
 }
-nav{
-  	font-size: 14px;
-}
 li{
+  	font-size: 14px;
   	list-style-type: none;
   	display: inline-block;
 	margin-left: 30px;
@@ -35,9 +34,6 @@ a:hover{
 	background-color: #DEEBFF;
 	transition: 0.2s;
 	border-radius: 20px;
-}
-i:hover{
-	color: aqua;
 }
 .icon-text:hover{
 	color: #0065FC;
@@ -103,12 +99,11 @@ input{
 	padding: 5px 5px 5px 5px;
 }
 #nav-icon{
-	display: inline-flex;
-	flex-direction: row;
-	flex-wrap: wrap;
+	display: inline-block;
 	padding-top: 40px;
 	margin-left: -5em; 
 	text-align: center;
+	cursor: crosshair;
 }
 .li-icon{
 	background-color: #DEEBFF;
@@ -130,6 +125,8 @@ input{
 #filtre{
 	color: black;
 	font-weight: bold;
+	margin-right: 30px;
+	margin-left: 10px;
 }
 #info{
 	color: #0065FC;
@@ -141,6 +138,12 @@ input{
 	margin-right: 8px;
 }
 /*SECTION*/
+section{
+	display: flex;
+}
+.euro{
+	font-weight: bold;
+}
 .star{
 	color: #0065FC;
 }
@@ -153,64 +156,47 @@ h5{
 h6{
 	font-weight: normal;
 }
-.landscape{
-	border-top-left-radius: 20px;
-	border-top-right-radius:20px;
-}
-.left-radius{
-	border-top-left-radius:20px;
-	border-bottom-left-radius:20px;
-}
 #one{
 	background-color: #F2F2F2;
+	display: inline-block;
+}
+.row{
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+}
+figure{
+	border: solid 4px red;/*à enlever*/
+	border-radius: 20px;
 	display: inline-flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: space-around;
-	align-content: center;
-}
-#two{
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
+	padding: 10px;
+	background-color: #FFF;
+	margin: 10px;
+	width: 210px;
+	height: auto;
 }
 img{
-	width: 250px;
-	height: 200px;
-}
-h3{
-	display: flex;
-	justify-content: space-between;
-}
-figure{
-	display: flex;
-	flex-direction: row;
-	border: solid 4px white;
-	border-radius: 20px;
-	flex-wrap: wrap;
-	justify-content: flex-start;
-	align-items: center;
+	width: 100%;
+	height: 150px;
 }
 figcaption{
-	background-color: white;
-	flex-wrap: wrap;
-	margin: 20px;
-	height: 250px;
+	border: solid 4px yellow;
+	border-radius: 20px;
+	background-color: #FFF;
 }
-.figcaption-aside{
-	background-color: white;
+.bold{
+	font-weight: bold;
+	font-size: 14px;
 }
 /*ASIDE*/
 aside{
+	background-color: lightgreen;/*#F2F2F2;*/
 	display: flex;
-	background-color: #F2F2F2;
-	flex-wrap: wrap;
 	flex-direction: column;
-	align-content: center;
+	justify-content: center;
 }
-#chart{
-	justify-content: space-between;
-}
+/*SECTION2*/
 /*footer*/
 footer{
 	display: flex;
@@ -232,3 +218,4 @@ footer{
 	font-size: 12px;
 	font-weight: lighter;
 }
+/*MEDIA QUERIES*/
