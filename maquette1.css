@@ -28,10 +28,11 @@ li{
 a{
 	text-decoration: none;
 	display: flex;
-	flex-wrap: wrap;
+	color: black;
+	cursor: pointer;
 }
-a:hover{
-	background-color: #DEEBFF;
+li:hover{
+	box-shadow: 0 0 10px 5px #DEEBFF;
 	transition: 0.2s;
 	border-radius: 20px;
 }
@@ -50,7 +51,6 @@ a:hover{
 }
 h2{
 	font-weight: bold;
-	padding: 10px;
 }
 /*HEADER*/
 h4{
@@ -135,12 +135,12 @@ input{
 	margin-right: 8px;
 }
 /*SECTION*/
-section{
-	display: inline-block;
-}
 #hotel{
-	background-color: #F2F2F2;
-	display: inline-block;
+	background-color: blue;
+	display: flex;
+	flex-direction: row;
+	border-top-right-radius: 30px;
+	border-bottom-right-radius: 30px;
 }
 .euro{
 	font-weight: bold;
@@ -194,13 +194,9 @@ h6{
 figure{
 	border: solid 5px white;
 	border-radius: 20px;
-	display: inline-flex;
-	flex-direction: row;
-	flex-wrap: wrap;
 	background-color: #FFF;
-	margin: 25px;
+	margin: 20px;
 	width: 425px;
-	height: auto;
 	box-shadow: 0px 0px 3px 3px lightgray;
 }
 img{
@@ -220,13 +216,20 @@ figcaption{
 }
 /*ASIDE*/
 aside{
-	background-color: #F2F2F2;
 	display: flex;
 	flex-direction: column;
+	background-color: red;
+	border-top-left-radius: 30px;
+	border-bottom-left-radius: 30px;
 }
 h3{
-	display: flex;
+	display: inline-flex;
 	justify-content: space-between;
+}
+.p2-aside{
+	padding: 0px 0 60px 0;
+	font-size: 11px;
+	font-weight: lighter;
 }
 .famous1{
 	border-top-left-radius: 20px;
@@ -250,44 +253,57 @@ h3{
 }
 /*SECTION2*/
 #activites{
-	display: inline-table;
-	justify-content: space-around;
+	display: inline-flex;
+	background-color: lightgreen;
 }
-.legend-section2{
+.legend-activite{
 	border: none;
+	box-shadow: 0px 0px 10px 5px #F2F2F2;
+	height: max-content;
 }
 .activite1{
 	border-top-right-radius: 20px;
 	border-top-left-radius: 20px;
 	width: 100%;
+	height: 620px;
+	object-fit: cover;
+	object-position: top;
 }
 .activite2{
 	border-top-right-radius: 20px;
 	border-top-left-radius: 20px;
 	width: 100%;
+	object-fit: cover;
+	object-position: center;
 }
 .activite3{
 	border-top-right-radius: 20px;
 	border-top-left-radius: 20px;
 	width: 100%;
+	object-fit: cover;
+	object-position: top;
+	flex: 2;
 }
 .activite4{
 	border-top-right-radius: 20px;
 	border-top-left-radius: 20px;
 	width: 100%;
-
+	height: 620px;
+	object-fit: cover;
+	object-position: top;
 }
 .activite5{
 	border-top-right-radius: 20px;
 	border-top-left-radius: 20px;
 	width: 100%;
-	height: auto;
+	object-fit: cover;
+	object-position: top;
 }
 .activite6{
 	border-top-right-radius: 20px;
 	border-top-left-radius: 20px;
 	width: 100%;
-	height: auto;
+	object-fit: cover;
 }
 /*footer*/
 footer{
