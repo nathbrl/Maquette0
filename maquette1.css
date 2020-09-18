@@ -50,6 +50,12 @@ h4{
 	font-size: 12px;
 	font-weight: normal;
 }
+#anchor1{
+	margin-left: 40px;
+}
+#anchor2{
+	margin-left: 40px;
+}
 input{
 	outline: none;
 	border: none;
@@ -59,6 +65,7 @@ input{
 #search-box{
 	background-color: white;
 	height: 25px;
+	display: inline-flex;
 	border-radius: 15px;
 	border-top-left-radius: 15px;
 	border-bottom-left-radius: 15px;
@@ -78,28 +85,11 @@ input{
 	background-color: #0065FC;
 	padding: 5px 6px 4px 6px;
 }
-#placeholder{
+::placeholder{
 	color: black;
 	font-weight: bold;
 	opacity: 1;
 }
-/*::placeholder{
-	color: black;
-	font-weight: bold;
-}
-::-webkit-input-placeholder{
-	color: black;
-	font-weight: bold;
-}
-:-ms-input-placeholder{
-	color: black;
-	font-weight: bold;
-}
-::-moz-placeholder{
-	color: black;
-	opacity: 1;
-	font-weight: bold;
-}*/
 #filter{
 	color: black;
 	font-weight: bold;
@@ -157,14 +147,17 @@ a:hover{
 #hotel-and-popular{
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-around;
+	justify-content: space-evenly;
+}
+#hotel-room{
+	background-color: #F2F2F2;
+	border-top-right-radius: 30px;
+	border-bottom-right-radius: 30px;
 }
 .hotel-pictures{
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	border-top-right-radius: 30px;
-	border-bottom-right-radius: 30px;
 }
 #see-more{
 	display: block;
@@ -234,24 +227,24 @@ img{
 	width: 100%;
 	height: 190px;
 }
-.title{
-	margin-left: 30px;
-}
 /*ASIDE*/
 #popular{
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
 	background-color: #F2F2F2;
-	width: 20%;
 	border-top-left-radius: 30px;
 	border-bottom-left-radius: 30px;
+	padding: 20px;
 }
 .star-aside{
 	color: #0065FC;
 }
 .grey-star-aside{
 	color: lightgrey;
+}
+.stars-aside{
+	padding-top: 60px;
 }
 .hotel-name-aside{
 	font-weight: bold;
@@ -264,6 +257,7 @@ img{
 #title-chart{
 	display: flex;
 	justify-content: space-between;
+	margin: 20px;
 }
 .text-aside{
 	display: flex;
@@ -291,16 +285,14 @@ img{
 }
 /*section 2*/
 #activities{
-	display: inline-flex;
+	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-around;
 }
 .legend-activity{
-	border: none;
 	box-shadow: 0px 0px 10px 5px #F2F2F2;
 	height: max-content;
-	padding: 20px;
 }
 .activity-name{
 	font-size: 14px;
@@ -378,4 +370,10 @@ footer{
 #assistance{
 	font-size: 12px;
 	font-weight: lighter;
+}
+/* MEDIA QUERIES*/
+@media only screen and (min-width: 375px) and (max-width: 730){
+	header{
+		
+	}
 }
