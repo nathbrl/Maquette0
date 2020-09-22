@@ -3,6 +3,7 @@ body,html{
 	font-family: 'Raleway', 'sans-serif';
 	margin: 0;
 	padding: 0;
+	width: 100%;
 }
 /* ÉLÉMENTS PRINCIPAUX DE LA PAGE */
 /*Header*/
@@ -227,11 +228,7 @@ img{
 	border-bottom-left-radius: 30px;
 	width: 180px
 }
-.popular-room1{
-	object-fit: cover;
-	object-position: right;
-}
-.popular-room2{
+.popular-room1,.popular-room2{
 	object-fit: cover;
 	object-position: right;
 }
@@ -294,7 +291,13 @@ footer{
 /*smartphones*/
 @media only screen and (min-width:320px) and (max-width:480px){
 	body{
-		margin: 10px;
+		width: 100%;
+	}
+	h2{
+		font-size: 22px;
+	}
+	#info-text{
+
 	}
 	#top-line{
 		border-top: none;
@@ -303,6 +306,7 @@ footer{
 		margin-top: 2px;
 	}
 	#menu{
+		display: inline-flex;
 		flex-wrap: wrap-reverse;
 	}
 	#hotel-and-popular{
@@ -311,9 +315,11 @@ footer{
 	figure{
 		border: none;
 	}
-
 	#see-more{
 		margin-left: 30px;
+	}
+	#title-chart{
+		justify-content: space-around;
 	}
 	.stars-aside{
 		padding-top: 30px;
@@ -330,13 +336,13 @@ footer{
 		border-top-left-radius: 10px;
 	}
 	.popular-room1,.popular-room2,.popular-room3{
-		height: 150px;
+		height: 165px;
 	}
 	.activity1,.activity2,.activity3,.activity4,.activity5,.activity6{
 		border-top-right-radius: 10px;
 	}
 	footer{
-		display: inline-flex;
+		display: inline;
 		flex-wrap: wrap;
 		justify-content: space-between;
 	}

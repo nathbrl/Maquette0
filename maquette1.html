@@ -13,11 +13,17 @@
     		<header>
     			<div id="logo-menu">
     				<img src="imagesreservia/logo/Reservia@3x.png" alt="logo reservia" id="logo"/>
-    				<nav id="menu">
-    					<ul>
-    						<li id="top-line"><a href="#anchor1" id="normal">Hébergements</a></li>
-                            <li><a href="#anchor2" id="black">Activités</a></li>
-                            <li><a href="#" id="bold">S'inscrire</a></li>
+    				<nav>
+    					<ul id="menu">
+    						<li id="top-line">
+                                <a href="#anchor1" id="normal">Hébergements</a>
+                            </li>
+                            <li>
+                                <a href="#anchor2" id="black">Activités</a>
+                            </li>
+                            <li>
+                                <a href="#" id="bold">S'inscrire</a>
+                            </li>
     					</ul>
     				</nav>
     			</div>
@@ -25,18 +31,50 @@
     			<h4>En plein centre ville ou en pleine nature</h4>
     			<form method="post" action="traitement.php">
     				<div id="search-box">
-    					<span id="map"><i class="fas fa-map-marker-alt"></i></span>
+    					<span id="map">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </span>
     					<input type="search" placeholder="Marseille, France" id="placeholder">
     					<input type="submit" id="search-button" value="Rechercher">
     		        </div>
     	        </form>
     	        <nav>
     	        	<ul>
-    	        		<li><span id="filter">Filtres</span></li>
-                        <li><a href="#"><span class="filter-icon"><i class="fas fa-money-bill-wave">&nbsp;</i></span><span class="filter-text">Économique</span></a></li>
-                        <li><a href="#"><span class="filter-icon"><i class="fas fa-child">&nbsp;</i></span><span class="filter-text">Familial</span></a></li>
-                        <li><a href="#"><span class="filter-icon"><i class="fas fa-heart">&nbsp;</i></span><span class="filter-text">Romantique</span></a></li>
-                        <li><a href="#"><span class="filter-icon"><i class="fas fa-dog">&nbsp;</i></span><span class="filter-text">Animaux autorisés</span></a></li>
+    	        		<li>
+                            <span id="filter">Filtres</span>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="filter-icon">
+                                    <i class="fas fa-money-bill-wave">&nbsp;</i>
+                                </span>
+                                <span class="filter-text">Économique</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="filter-icon">
+                                    <i class="fas fa-child">&nbsp;</i>
+                                </span>
+                                <span class="filter-text">Familial</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="filter-icon">
+                                    <i class="fas fa-heart">&nbsp;</i>
+                                </span>
+                                <span class="filter-text">Romantique</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="filter-icon">
+                                    <i class="fas fa-dog">&nbsp;</i>
+                                </span>
+                                <span class="filter-text">Animaux autorisés</span>
+                            </a>
+                        </li>
     	        	</ul>
     	        </nav>
     	        <h6>
@@ -53,8 +91,18 @@
                                 	<img src="imagesreservia/hebergements/3-medium/cannebière.jpg" alt="Chambre auberge de la Cannebière" class="hotel-room1"/>
                                 	<figcaption>
                                     	<p class="hotel-name">Auberge de la Cannebière</p>
-                                    	<p class="hotel-price">Nuit à partir de <span class="euro">25&euro;</span></p>
-                                    	<span class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span><span class="grey-star"><i class="fas fa-star"></i></span>
+                                    	<p class="hotel-price">Nuit à partir de
+                                            <span class="euro">25&euro;</span>
+                                        </p>
+                                    	<span class="star">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </span>
+                                        <span class="grey-star">
+                                            <i class="fas fa-star"></i>
+                                        </span>
                                 	</figcaption>
                             	</figure>
                         	</a>
@@ -63,8 +111,16 @@
         	                        <img src="imagesreservia/hebergements/3-medium/port.jpg" alt="Chambre hôtel du port" class="hotel-room2"/>
         	                        <figcaption>
         	                        	<p class="hotel-name">Hôtel du port</p>
-        	                        	<p class="hotel-price">Nuit à partir de 52<span class="euro">&euro;</span></p>
-        	                        	<span class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+        	                        	<p class="hotel-price">Nuit à partir de 52
+                                            <span class="euro">&euro;</span>
+                                        </p>
+        	                        	<span class="star">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </span>
         	                        </figcaption>
                             	</figure>
                         	</a>
@@ -73,8 +129,18 @@
         	                        <img src="imagesreservia/hebergements/3-medium/mouette.jpg" alt="Chambre hôtel les mouettes" class="hotel-room3"/>
         	                        <figcaption>
         	                    	   <p class="hotel-name">Hôtel Les mouettes</p>
-        	                    	   <p class="hotel-price">Nuit à partir de 76<span class="euro">&euro;</span></p>
-        	                    	   <span class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span><span class="grey-star"><i class="fas fa-star"></i></span>
+        	                    	   <p class="hotel-price">Nuit à partir de 76
+                                            <span class="euro">&euro;</span>
+                                       </p>
+        	                    	   <span class="star">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </span>
+                                        <span class="grey-star">
+                                            <i class="fas fa-star"></i>
+                                        </span>
         	                        </figcaption>
         	            	   </figure>
                         	</a>
@@ -85,8 +151,18 @@
                                 	<img src="imagesreservia/hebergements/3-medium/mer.jpg" alt="Chambre hôtel de la mer" class="hotel-room4"/>
                                 	<figcaption>
         	                            <p class="hotel-name">Hôtel de la mer</p>
-        	                            <p class="hotel-price">Nuit à partir de 46<span class="euro">&euro;</span></p>
-        	                            <span class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span><span class="grey-star"><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+        	                            <p class="hotel-price">Nuit à partir de 46
+                                            <span class="euro">&euro;</span>
+                                        </p>
+        	                            <span class="star">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </span>
+                                        <span class="grey-star">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </span>
                                 	</figcaption>
                             	</figure>
                         	</a>
@@ -95,8 +171,18 @@
                                 	<img src="imagesreservia/hebergements/3-medium/panier.jpg" alt="Chambre auberge du panier" class="hotel-room5"/>
                                 	<figcaption>
         	                            <p class="hotel-name">Auberge Le Panier</p>
-        	                            <p class="hotel-price">Nuit à partir de <span class="euro">23&euro;</span></p>
-        	                            <span class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span><span class="grey-star"><i class="fas fa-star"></i></span>
+        	                            <p class="hotel-price">Nuit à partir de
+                                            <span class="euro">23&euro;</span>
+                                        </p>
+        	                            <span class="star">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </span>
+                                        <span class="grey-star">
+                                            <i class="fas fa-star"></i>
+                                        </span>
                                 	</figcaption>
                             	</figure>
                         	</a>
@@ -105,8 +191,16 @@
                                 	<img src="imagesreservia/hebergements/3-medium/amina.jpg" alt="Chambre hôtel chez amina" class="hotel-room6"/>
                                 	<figcaption>
         	                            <p class="hotel-name">Hôtel chez Amina</p>
-        	                            <p class="hotel-price">Nuit à partir de 96<span class="euro">&euro;</span></p>
-        	                            <span class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+        	                            <p class="hotel-price">Nuit à partir de 96
+                                            <span class="euro">&euro;</span>
+                                        </p>
+        	                            <span class="star">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </span>
                                 	</figcaption>
                             	</figure>
                             </a>
@@ -123,9 +217,17 @@
                                 <img src="imagesreservia/hebergements/3-medium/soleil.jpg" alt="Chambre hôtel le soleil du matin" class="popular-room1" />
                                 <figcaption class="legend-aside">
                                     <p class="hotel-name-aside">Hôtel Le soleil du <br/>matin</p>
-                                    <p class="hotel-price-aside">Nuit à partir de 128<span class="euro">&euro;</span></p>
+                                    <p class="hotel-price-aside">Nuit à partir de 128
+                                        <span class="euro">&euro;</span>
+                                    </p>
                                     <div class="stars-aside">
-                                        <span class="star-aside"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                                        <span class="star-aside">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </span>
                                     </div>
                                 </figcaption>
                             </figure>
@@ -135,9 +237,19 @@
                                 <img src="imagesreservia/hebergements/3-medium/eau.jpg" alt="Une chambre d'hôte au coeur de l'eau" class="popular-room2" />
                                 <figcaption class="legend-aside">
                                     <p class="hotel-name-aside">Au coeur de l'eau<br/>Chambres d'hôtes</p>
-                                    <p class="hotel-price-aside">Nuit à partir de 71<span class="euro">&euro;</span></p>
+                                    <p class="hotel-price-aside">Nuit à partir de 71
+                                        <span class="euro">&euro;</span>
+                                    </p>
                                     <div class="stars-aside">
-                                        <span class="star-aside"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span><span class="grey-star-aside"><i class="fas fa-star"></i></span>
+                                        <span class="star-aside">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </span>
+                                        <span class="grey-star-aside">
+                                            <i class="fas fa-star"></i>
+                                        </span>
                                     </div>
                                 </figcaption>
                             </figure>
@@ -147,9 +259,19 @@
                                 <img src="imagesreservia/hebergements/3-medium/blanc.jpg" alt="Chambre hôtel tout bleu et blanc" class="popular-room3" />
                                 <figcaption class="legend-aside">
                                     <p class="hotel-name-aside">Hôtel Tout bleu et <br/>Blanc</p>
-                                    <p class="hotel-price-aside">Nuit à partir de 68<span class="euro">&euro;</span></p>
+                                    <p class="hotel-price-aside">Nuit à partir de 68
+                                        <span class="euro">&euro;</span>
+                                    </p>
                                     <div class="stars-aside">
-                                        <span class="star-aside"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span><span class="grey-star-aside"><i class="fas fa-star"></i></span>
+                                        <span class="star-aside">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </span>
+                                        <span class="grey-star-aside">
+                                            <i class="fas fa-star"></i>
+                                        </span>
                                     </div>
                                 </figcaption>
                             </figure>
