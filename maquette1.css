@@ -32,6 +32,8 @@ li{
 #nav-links{
 	display: flex;
 	flex-wrap: wrap;
+	margin: 20px;
+	padding: 10px;
 }
 #logo{
 	width: 80px;
@@ -56,10 +58,7 @@ h4{
 	font-size: 12px;
 	font-weight: normal;
 }
-#anchor1{
-	margin-left: 40px;
-}
-#anchor2{
+#anchor1,#anchor2{
 	margin-left: 40px;
 }
 input{
@@ -342,7 +341,9 @@ footer{
 		flex-wrap: wrap-reverse;
 	}
 	figure{
+		width: 280px;
 		border: none;
+		margin: 0;
 	}
 	#see-more{
 		margin-left: 30px;
@@ -384,6 +385,7 @@ footer{
 		padding: 20px 20px;
 		flex-direction: column;
 		height: auto;
+	}
 }
 /*tablette*/
 @media only screen and (min-width: 768px) and (max-width: 1024px){
@@ -393,4 +395,42 @@ footer{
 	#info-text{
 		font-size: 15px
 	}
+	#popular{
+		flex-direction: row;
+		border-radius: 20px;
+		flex-wrap: nowrap;
+	}
+	#title-chart{
+		justify-content: space-around;
+	}
+	.text-aside{
+		display: inline-block;
+	}
+	.popular-room1,.popular-room2,.popular-room3{
+		border-radius: 20px;
+	}
+	.activity1,.activity2,.activity3,.activity4,.activity5,.activity6{
+		border-top-right-radius: 20px;
+		height: 200px;
+		object-fit: cover;
+		object-position: center;
+	}
+	.hotel-pictures{
+		display: table-cell;
+	}
+	#see-more{
+		margin-left: 35px;
+	}
+	#activities{
+		height: auto;
+		display: contents;
+		flex-wrap: wrap;
+	}
+	.activity-name,#anchor1,#anchor2{
+		text-align: center;
+	}
+	figure{
+		width: 100%;
+	}
+
 }
