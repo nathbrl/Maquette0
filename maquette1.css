@@ -6,19 +6,51 @@ body,html{
 }
 /* ÉLÉMENTS PRINCIPAUX DE LA PAGE */
 /*propriétés en commun*/
-a,#logo-menu,#nav-links,#hotel-and-popular,.hotel-pictures,#popular,#title-chart,.text-aside,#activities,footer{
+a,
+#logo-menu,
+#nav-links,
+#hotel-and-popular,
+.hotel-pictures,
+#popular,
+#title-chart,
+.text-aside,
+#activities,footer{
 	display: flex;
 }
-a,input,#black,::placeholder,#filter,#map{
+a,
+input,
+#black,
+::placeholder,
+#filter,
+#map{
 	color: black;
 }
-#normal,#bold,.filter-icon,a:hover,#info,.star,.star-aside{
+#normal,
+#bold,
+.filter-icon,
+a:hover,
+#info,
+.star,
+.star-aside{
 	color: #0065FC;
 }
-#bold,h2,::placeholder,#filter,.filter-text,.hotel-name,.hotel-name-aside,.euro,.activity-name,footer{
+#bold,
+h2,
+::placeholder,
+#filter,
+.filter-text,
+.hotel-name,
+.hotel-name-aside,
+.euro,
+.activity-name,
+footer{
 	font-weight: bold;
 }
-li,.hotel-name,.hotel-name-aside,.activity-name,footer{
+li,
+.hotel-name,
+.hotel-name-aside,
+.activity-name,
+footer{
 	font-size: 14px;
 }
 a{
@@ -30,21 +62,25 @@ li{
 	display: inline-flex;
 	margin: 10px;
 }
-#top-line{
-	border-top: solid 2px #0065FC;
-	padding-top: 10px;
+.top-line{
+	padding-top: 30px;
 	margin-top: 0;
 }
-#logo-menu,#nav-links,#hotel-and-popular,.hotel-pictures,#popular,#activities,footer{
+.line{
+	border-top: solid 2px #0065FC;
+}
+#logo-menu,
+#nav-links,
+#hotel-and-popular,
+.hotel-pictures,
+#popular,
+#activities,
+footer{
 	flex-wrap: wrap;
 }
 #logo-menu{
 	justify-content: space-between;
 	align-items: center;
-}
-#nav-links{
-	margin: 20px;
-	padding: 10px;
 }
 #logo{
 	width: 80px;
@@ -79,7 +115,7 @@ ul{
 #search-box{
 	background-color: white;
 	height: 32px;
-	display: inline-flex;
+	display: flex;
 	border-radius: 10px;
 }
 #map{
@@ -269,11 +305,14 @@ footer{
 	}
 	#logo-menu{
 		justify-content: flex-start;
+		max-width: 320px;
 	}
-	#top-line{
+	#search-box{
+	justify-content: center;
+	}
+	.line{
 		border-top: none;
 		border-bottom: solid 2px #0065FC;
-		padding-top: 4px;
 	}
 	#bold{
 		position: absolute;
@@ -320,7 +359,8 @@ footer{
 	figure{
 		width: 315px;
 		border: none;
-		box-shadow: none;
+		margin-right: 0;
+		margin-left: 0;
 	}
 	.rooms{
 		height: 220px;
@@ -352,7 +392,22 @@ footer{
 	#hotel-room{
 		background-color: white;
 	}
-	.hotel-room1,.hotel-room2,.hotel-room3,.hotel-room4,.hotel-room5,.hotel-room6,img,.activity1,.activity4,.activity1,.activity2,.activity3,.activity4,.activity5,.activity6,.rooms,.legend-activity{
+	.hotel-room1,
+	.hotel-room2,
+	.hotel-room3,
+	.hotel-room4,
+	.hotel-room5,
+	.hotel-room6,
+	.activity1,
+	.activity4,
+	.activity1,
+	.activity2,
+	.activity3,
+	.activity4,
+	.activity5,
+	.activity6,
+	.rooms,
+	.legend-activity{
 	border-top-right-radius: 15px;
 	border-top-left-radius: 15px;
 	}
@@ -435,6 +490,7 @@ footer{
 	}
 	figure{
 		width: 300px;
+		margin: 30px;
 	}
 
 }
