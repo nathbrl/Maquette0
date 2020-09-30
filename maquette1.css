@@ -28,7 +28,7 @@ input,
 #normal,
 #bold,
 .filter-icon,
-a:hover,
+.filter-text:hover,
 #info,
 .star,
 .star-aside{
@@ -450,8 +450,8 @@ footer{
 	}
 	.text-aside{
 		display: inline-block;
-		margin: 9px;
-		width: 83%;
+		max-width: 190px;
+		margin-left: 30px;
 	}
 	.stars-aside{
 		padding-top: 0;
