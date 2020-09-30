@@ -301,7 +301,7 @@ footer{
 @media only screen and (min-width:320px) and (max-width:480px){
 	h2{
 		font-size: 18px;
-		width: 75%;
+		width: 80%;
 	}
 	#logo-menu{
 		justify-content: flex-start;
@@ -353,6 +353,10 @@ footer{
 		background-color: #0065FC;
 		border-radius: 9px;
 	}
+	#anchor1{
+		margin-left: 0;
+	}
+
 	#hotel-and-popular{
 		flex-wrap: wrap-reverse;
 	}
@@ -377,8 +381,8 @@ footer{
 		height: 160px;
 	}
 	#see-more{
-		margin-left: 50px;
 		font-size: 15px;
+		display: flex;
 	}
 	#title-chart{
 		justify-content: space-around;
