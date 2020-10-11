@@ -228,9 +228,11 @@ img{
 /*ASIDE*/
 #popular{
 	flex-direction: column;
-	background-color: #F2F2F2;
 	border-top-left-radius: 30px;
 	border-bottom-left-radius: 30px;
+}
+aside{
+	background-color: #F2F2F2;
 }
 .stars-aside{
 	padding-top: 40px;
